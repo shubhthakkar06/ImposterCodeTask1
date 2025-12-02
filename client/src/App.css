@@ -1,0 +1,99 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL SPACE BACKGROUND */
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #0B0D13; /* Space black */
+  color: #F2F5FA;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* VIDEO background (if you add MP4 later) */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.75;
+}
+
+/* JOIN PAGE CONTAINER */
+.join-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* JOIN BOX (Among Us panel style) */
+.join-box {
+  width: 360px;
+  padding: 35px;
+  background: #161B22; /* Dark panel like game UI */
+  border-radius: 14px;
+  border: 2px solid #3F8CFF; /* Crewmate Blue outline */
+  box-shadow: 0 0 25px rgba(63, 140, 255, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: center;
+}
+
+/* HEADLINE */
+.join-box h2 {
+  color: #7DF9FF; /* Visor glow */
+  text-shadow: 0 0 12px rgba(125, 249, 255, 0.6);
+}
+
+/* INPUT FIELDS */
+.join-box input {
+  padding: 12px;
+  border-radius: 10px;
+  background: #0B0D13;
+  border: 1px solid #3F8CFF;
+  color: #F2F5FA;
+  transition: 0.25s;
+}
+
+.join-box input::placeholder {
+  color: #6A737D;
+}
+
+.join-box input:focus {
+  border-color: #A459FF; /* Purple highlight */
+  box-shadow: 0 0 12px rgba(164, 89, 255, 0.6);
+  outline: none;
+}
+
+/* BUTTON */
+.join-box button {
+  padding: 12px;
+  background: #FF2E63; /* Among Us Red */
+  color: #FFF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  transition: 0.25s;
+  box-shadow: 0 0 12px rgba(255, 46, 99, 0.5);
+}
+
+.join-box button:hover {
+  background: #D92555;
+  box-shadow: 0 0 18px rgba(255, 46, 99, 0.7);
+}
+
+.join-box button:active {
+  transform: scale(0.97);
+}
